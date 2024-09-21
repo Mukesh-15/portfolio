@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/portfolio.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="navoptions" id="navoptions">
+            <p><a href="#projects">Projects</a></p>
+            <p><a href="#skills">Skills</a></p>
+            <p><a href="#education">Education</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+        <i class="open-menu" onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></i>
+    </header>
+    <nav id="nav">
+        <i onclick="closeNav()"><ion-icon name="close-outline"></ion-icon></i>
+        <p onclick="closeNav()"><a href="#projects">Projects</a></p>
+        <p onclick="closeNav()"><a href="#skills">Skills</a></p>
+        <p onclick="closeNav()"><a href="#education">Education</a></p>
+        <p onclick="closeNav()"><a href="#contact">Contact</a></p>
+        
+    </nav>
+    <div class="intro">
+        <div class="sub" >
+            <div id="name">
+                <p style="margin-bottom:5px;">I'm</p>
+                <h1>MUKESH</h1>
+                <p style="margin-top:10px;">A frontend developer and learner</p>
+            </div>
+        </div>
+        <div class="sub" id="profimg">
+            <!-- <div class="blob">
+
+            </div> -->
+        </div>
+    </div>
+    <h2 class="ed" id="education">EDUCATION</h2>
+    <div class="education" >
+        <div class="sections">
+            <div class="section" id="sec1" onclick="drop(1)">
+                <div class="drop-down">
+                    <h4>SCHOOLING</h4>
+                    <i id="drop1"><ion-icon name="chevron-down-outline"></ion-icon></i>
+                </div>
+                <div id="dt1" class="dt"></div>
+            </div>
+            <div class="section" id="sec2" onclick="drop(2)">
+                <div class="drop-down">
+                    <h4>COLLEGE</h4>
+                    <i id="drop2"><ion-icon name="chevron-down-outline"></ion-icon></i>
+                </div>
+                <div id="dt2" class="dt"></div>
+            </div>
+            <div class="section" id="sec3" onclick="drop(3)">
+                <div class="drop-down">
+                    <h4>UG</h4>
+                    <i id="drop3"><ion-icon name="chevron-down-outline"></ion-icon></i>
+                </div>
+                <div id="dt3" class="dt"></div>
+            </div>
+        </div>
+    </div>
+    <h2 class="ed" id="skills">SKILLS</h2>
+    <div class="skills" >
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
+            <h4>HTML</h4>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png" alt="CSS">
+            <h4>CSS</h4>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/330px-Unofficial_JavaScript_logo_2.svg.png" alt="JS">
+            <h4>JavaScript</h4>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/182px-Python-logo-notext.svg.png" alt="PY">
+            <h4>Python</h4>
+        </div>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/150px-The_C_Programming_Language_logo.svg.png" alt="C">
+            <h4>C</h4>
+        </div>
+    </div>
+    <br>
+    <h2 class="ed" id="projects">PROJECTS</h2>
+    <div class="projects" id="projects">
+
+    </div>
+    <h2 class="ed">CERTIFICATIONS</h2>
+    <div class="cer">
+        <div class="cer-box">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
+            <div class="cer-dt">
+                <h4>JavaScript Certificate</h4>
+                <p>
+                    A certification for Programming with JavaScript offered by META through Coursera.
+                    <br><br>
+                    Grade Achieved: 96.80%
+                </p>
+            </div>
+        </div>
+        <div class="cer-box">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
+            <div class="cer-dt">        
+
+            </div>
+        </div>
+        <div class="cer-box">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
+            <div class="cer-dt">
+
+            </div>
+        </div>        
+    </div>
+    <div class="contactinfo">
+        <h2 id="contact">Contact</h2>
+        <div class="contacts">
+            <div class="platforms">
+                <h4>Social Media</h4>
+                <div>
+                    <i style="color:#f9ce34"><ion-icon name="logo-instagram"></ion-icon></i>
+                    <a href="https://www.instagram.com/mukie_15/">Instagram</a>
+                </div>
+                <div>
+                    <i style="color:#25D366"><ion-icon name="logo-whatsapp"></ion-icon></i>
+                    <a href="https://wa.me/qr/KH73QG2NNZBEO1">Whatsapp</a>
+                </div>
+                <div>
+                    <i style="color: #1DA1F2;"><ion-icon name="logo-twitter"></ion-icon></i>
+                    <a href="https://twitter.com/Mukie_15">Twitter</a>
+                </div>
+            </div>
+            <div class="platforms">
+                <h4>Other Platforms</h4>
+                <div>
+                    <i style="color: #0077B5 ;"><ion-icon name="logo-linkedin"></ion-icon></i>
+                    <a href="https://in.linkedin.com/in/mukesh-doodapaka-426a352b6">Linked in</a>
+                </div>
+                <div>
+                    <i style="color: #171515;"><ion-icon name="logo-github"></ion-icon></i>
+                    <a href="https://github.com/Mukesh-15">Github</a>
+                </div>
+                <div>
+                    <i style="color: #f2a01d;"><ion-icon name="code-slash-outline"></ion-icon></i>
+                    <a href="https://leetcode.com/u/MukeshDoodapaka/">Leetcode</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let nav = document.getElementById("nav");
+        nav.style.display = "none";
+
+        const openNav = ()=>{
+            nav.style.cssText ="display:block;position: fixed;top: 0;right: 0;z-index:9999;height: 100vh;width:90%;background-color: white;display: flex;justify-content: center;align-items: center;flex-direction: column;";
+        }
+        
+        const closeNav =()=>{
+            nav.style.display = "none";
+        }
+        let isActive = [false,false,false];
+        function drop(key){
+            let icon = document.getElementById("drop"+key);
+            let info =document.getElementById("dt"+key);
+            if(isActive[key-1]){
+                icon.style.cssText="transform: rotate(0deg);";
+                info.style.cssText ="height:0;width:0";
+                isActive[key-1]= false;
+            }
+            else{
+                icon.style.cssText="transform: rotate(180deg);";
+                info.style.cssText ="height:300px;width:100%";
+                isActive[key-1]= true;
+            }
+            
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
