@@ -49,21 +49,31 @@
                     <h4>SCHOOLING</h4>
                     <i id="drop1"><ion-icon name="chevron-down-outline"></ion-icon></i>
                 </div>
-                <div id="dt1" class="dt"></div>
+                <div id="dt1" class="dt">
+                    <h3>School Name:  Rosary Convent High School(RCHS)</h3>
+                    <br>
+                    
+                </div>
             </div>
             <div class="section" id="sec2" onclick="drop(2)">
                 <div class="drop-down">
                     <h4>COLLEGE</h4>
                     <i id="drop2"><ion-icon name="chevron-down-outline"></ion-icon></i>
                 </div>
-                <div id="dt2" class="dt"></div>
+                <div id="dt2" class="dt">
+                    <h3>College Name:  Tagore Junior College(TJC)</h3>
+                    <br>
+                </div>
             </div>
             <div class="section" id="sec3" onclick="drop(3)">
                 <div class="drop-down">
                     <h4>UG</h4>
                     <i id="drop3"><ion-icon name="chevron-down-outline"></ion-icon></i>
                 </div>
-                <div id="dt3" class="dt"></div>
+                <div id="dt3" class="dt">
+                    <h3>University Name:  JNTUH-UCESTH</h3>
+                    <br>
+                </div>
             </div>
         </div>
     </div>
@@ -108,10 +118,17 @@
                 </p>
             </div>
         </div>
+        
         <div class="cer-box">
-            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
+            <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B.jpeg" width="300px" height="250px" alt="" class="m-cer">
             <div class="cer-dt">        
-
+                <h4>React Basics Certificate</h4>
+                <p>
+                    Hello everyone,
+I'm excited to share my Completion Certificate for React Basics offered by Meta through Coursera.
+                    <br><br>
+                    Grade Achieved: 100%
+                </p>
             </div>
         </div>
         <div class="cer-box">
@@ -173,12 +190,11 @@
             let info =document.getElementById("dt"+key);
             if(isActive[key-1]){
                 icon.style.cssText="transform: rotate(0deg);";
-                info.style.cssText ="height:0;width:0";
-                isActive[key-1]= false;
+                info.style.cssText ="height:0;width:0;display:none;";
             }
             else{
                 icon.style.cssText="transform: rotate(180deg);";
-                info.style.cssText ="height:300px;width:100%";
+                info.style.cssText ="height:300px;width:100%;display:block;";
                 isActive[key-1]= true;
             }
             

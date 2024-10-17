@@ -160,6 +160,10 @@ header div{
     font-size:23px;
     transition-duration: 0.4s;
 }
+.dt{
+    display: none;
+    margin-left: 20px;
+}
 .skills{
     display: flex;
     flex-wrap:wrap;
