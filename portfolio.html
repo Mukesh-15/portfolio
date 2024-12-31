@@ -108,10 +108,10 @@
 
     </div> -->
     <h2 class="ed">CERTIFICATIONS</h2>
-    <div class="cer">
+    <div class="cer" onclick="redirect(0)">
         <div id="cer1" class="cer-box">
             <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
-            <div class="cer-dt">
+            <div class="cer-dt" >
                 <h4>JavaScript Certificate</h4>
                 <p>
                     A certification for Programming with JavaScript offered by META through Coursera.
@@ -121,9 +121,9 @@
             </div>
         </div>
         
-        <div class="cer-box">
+        <div class="cer-box" onclick="redirect(1)">
             <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B.jpeg" width="300px" height="250px" alt="" class="m-cer">
-            <div class="cer-dt">        
+            <div class="cer-dt" >        
                 <h4>React Basics Certificate</h4>
                 <p>
                     Completion Certificate for React Basics offered by Meta through Coursera.
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="contactinfo">
+    <div class="contactinfo" >
         <h2 id="contact">Contact</h2>
         <div class="contacts">
             <div class="platforms">
@@ -194,7 +194,10 @@
                 isActive[key-1]= true;
             }
         }
-        
+        const links = ["https://www.coursera.org/account/accomplishments/verify/7Y732FIQA4FA?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course","https://www.coursera.org/account/accomplishments/verify/NNCJ0L7YZ01B?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"];
+        const redirect = (index)=>{
+            window.location.href = links[index];
+        }
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
