@@ -29,7 +29,7 @@
     </nav>
     <div class="intro">
         <div class="sub" >
-            <div id="name">
+            <div id="name" class="hidden">
                 <p style="margin-bottom:5px;">I'm</p>
                 <h1>MUKESH</h1>
                 <p style="margin-top:10px;">A frontend developer and learner</p>
@@ -77,7 +77,7 @@
         </div>
     </div>
     <h2 class="ed" id="skills">SKILLS</h2>
-    <div class="skills" >
+    <div class="skills hidden">
         <div>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png" alt="HTML">
             <h4>HTML</h4>
@@ -104,10 +104,6 @@
         </div>
     </div>
     <br>
-    <!-- <h2 class="ed" id="projects">PROJECTS</h2> -->
-    <!-- <div class="projects" id="projects">
-
-    </div> -->
     <h2 class="ed" id="projects">PROJECTS</h2>
     <div class="project-sec">
         <div class="sec">
@@ -131,7 +127,7 @@
         </div>
     </div>
     <h2 class="ed">CERTIFICATIONS</h2>
-    <div class="cer" onclick="redirect(0)">
+    <div class="cer hidden" onclick="redirect(0)">
         <div id="cer1" class="cer-box">
             <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA/CERTIFICATE_LANDING_PAGE~7Y732FIQA4FA.jpeg" width="300px" height="250px" alt="" class="m-cer">
             <div class="cer-dt" >
@@ -144,7 +140,7 @@
             </div>
         </div>
         
-        <div class="cer-box" onclick="redirect(1)">
+        <div class="cer-box hidden" onclick="redirect(1)">
             <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B/CERTIFICATE_LANDING_PAGE~NNCJ0L7YZ01B.jpeg" width="300px" height="250px" alt="" class="m-cer">
             <div class="cer-dt" >        
                 <h4>React Basics Certificate</h4>
@@ -192,6 +188,20 @@
         </div>
     </div>
     <script>
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+                console.log(entry);
+                if(entry.isIntersecting){
+                    entry.target.classList.add('show');
+                }else{
+                    entry.target.classList.remove('show');
+                }
+            });
+        })
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el)=>observer.observe(el));
+        //
         let nav = document.getElementById("nav");
         nav.style.display = "none";
 
