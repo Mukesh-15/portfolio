@@ -278,6 +278,10 @@ header div{
 .cer div .cer-dt{
     display: flex;
 }
+.cer div .cer-dt h4{
+    margin: 0 20px;
+    text-align: center;
+}
 .cer div p{
     margin: auto;
     margin-left:30px;

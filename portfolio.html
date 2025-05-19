@@ -52,6 +52,7 @@
                 <div id="dt1" class="dt">
                     <h3>School Name:  Rosary Convent High School(RCHS)</h3>
                     <br>
+                    <p>I have completed my class 10th in the year 2021.</p>
                 </div>
             </div>
             <div class="section" id="sec2" onclick="drop(2)">
@@ -62,6 +63,7 @@
                 <div id="dt2" class="dt">
                     <h3>College Name:  Tagore Junior College(TJC)</h3>
                     <br>
+                    <p>I have completed my class 12th in the year 2023 and secured a total of 900 out of 1000.</p>
                 </div>
             </div>
             <div class="section" id="sec3" onclick="drop(3)">
@@ -72,6 +74,7 @@
                 <div id="dt3" class="dt">
                     <h3>University Name:  JNTUH-UCESTH</h3>
                     <br>
+                    <p>Currently I'm pursuing my B.Tech from the JNTUH from the department of computer science and engineering.</p>
                 </div>
             </div>
         </div>
@@ -91,7 +94,7 @@
             <h4>JavaScript</h4>
         </div>
         <div class="skill hidden">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/182px-Python-logo-notext.svg.png" alt="PY">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/182px-Python-logo-notext.svg.png" alt="Python">
             <h4>Python</h4>
         </div>
         <div class="skill hidden">
@@ -99,13 +102,63 @@
             <h4>C</h4>
         </div>
         <div class="skill hidden">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/180px-React_Logo_SVG.svg.png" alt="REACT">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/180px-React_Logo_SVG.svg.png" alt="React">
             <h4>React.js</h4>
+        </div>
+        <div class="skill hidden">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0PMU0G92vk-wP0YTdvmsxfMXrMGyF6Z9xQWAGOPdGmKvs_tZ38zcZbs&s=10" alt="Express">
+            <h4>Express</h4>
+        </div>
+        <div class="skill hidden">
+            <img src="https://s.yimg.com/fz/api/res/1.2/S3oin2oprHTVpMuy8hFFLg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI2MDtxPTgwO3c9MzMy/https://s.yimg.com/zb/imgv1/04df967c-bda9-30da-8165-93f36f0065bf/t_500x300" alt="Django">
+            <h4>Django</h4>
         </div>
     </div>
     <br>
     <h2 class="ed" id="projects">PROJECTS</h2>
     <div class="project-sec">
+        <div class="sec">
+            <div class="screenshot">
+                <div class="pro-img">
+                    <img src="media\images\Screenshot 2025-01-06 204343.png" alt="crime reporting system image" >
+                </div>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h4>PROJECT NAME: CRIME REPORTING SYSTEM</h4>
+                </div>
+                <div class="details">
+                    <h5 style="text-align: center;">---TOOLS USED---</h5>
+                    <p>Frontend :&nbsp  HTML,CSS,Javascript</p>
+                    <p>Backend :&nbsp Python3</p>
+                    <p>Framework :&nbsp Django</p>
+                    <p>API :&nbsp OpenStreet Map API</p>
+                    <br>
+                    <a href="https://github.com/Mukesh-15/Crime-Reporting-System">Github Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="sec">
+            <div class="screenshot">
+                <div class="pro-img">
+                    <img src="media\images\Screenshot 2025-01-06 204343.png" alt="Notebook app image" >
+                </div>
+            </div>
+            <div class="info">
+                <div class="title">
+                    <h4>PROJECT NAME: NOTEBOOK APP</h4>
+                </div>
+                <div class="details">
+                    <h5 style="text-align: center;">---TOOLS USED---</h5>
+                    <p>Frontend :&nbsp React js</p>
+                    <p>Backend :&nbsp Node js</p>
+                    <p>Framework :&nbsp Express js</p>
+                    <p>Database :&nbsp MongoDB</p>
+                    <br>
+                    <a href="https://github.com/Mukesh-15/NoteBook">Github Link</a>
+                </div>
+            </div>
+        </div>
         <div class="sec">
             <div class="screenshot">
                 <div class="pro-img">
@@ -122,6 +175,8 @@
                     <p>Backend :&nbsp Python3</p>
                     <p>Framework :&nbsp Django</p>
                     <p>API :&nbsp OpenWeather API</p>
+                    <br>
+                    <!-- <a href="">Github Link</a> -->
                 </div>
             </div>
         </div>
@@ -146,6 +201,18 @@
                 <h4>React Basics Certificate</h4>
                 <p>
                     Completion Certificate for React Basics offered by Meta through Coursera.
+                    <br><br>
+                    Grade Achieved: 100%
+                </p>
+            </div>
+        </div>
+
+        <div class="cer-box hidden" onclick="redirect(2)">
+            <img src="media\images\certi.png" width="225px" height="175px" alt="" class="m-cer">
+            <div class="cer-dt" >        
+                <h4>Hacker Rank Problem Solving(Basics) Certificate</h4>
+                <p>
+                    Problem Solving Certificate by Hacker Rank for solving problems.
                     <br><br>
                     Grade Achieved: 100%
                 </p>
@@ -193,7 +260,8 @@
                 console.log(entry);
                 if(entry.isIntersecting){
                     entry.target.classList.add('show');
-                }else{
+                }
+                else{
                     entry.target.classList.remove('show');
                 }
             });
@@ -201,6 +269,7 @@
 
         const hiddenElements = document.querySelectorAll('.hidden');
         hiddenElements.forEach((el)=>observer.observe(el));
+        
         //
         let nav = document.getElementById("nav");
         nav.style.display = "none";
@@ -227,7 +296,9 @@
                 isActive[key-1]= true;
             }
         }
-        const links = ["https://www.coursera.org/account/accomplishments/verify/7Y732FIQA4FA?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course","https://www.coursera.org/account/accomplishments/verify/NNCJ0L7YZ01B?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"];
+        const links = ["https://www.coursera.org/account/accomplishments/verify/7Y732FIQA4FA?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+        "https://www.coursera.org/account/accomplishments/verify/NNCJ0L7YZ01B?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course",
+        "https://www.hackerrank.com/certificates/d5c59e5e0060"];
         const redirect = (index)=>{
             window.location.href = links[index];
         }
